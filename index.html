@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descargar APK</title>
     <style>
-        /* Estilos básicos de fondo */
         body {
             display: flex;
             align-items: center;
@@ -16,7 +15,6 @@
             background: linear-gradient(135deg, #2c3e50, #3498db);
             color: white;
         }
-        /* Contenedor del botón */
         .download-btn {
             display: inline-block;
             padding: 15px 30px;
@@ -33,7 +31,6 @@
             position: relative;
             overflow: hidden;
         }
-        /* Efecto de sombreado y animación de presionar */
         .download-btn:hover {
             background: linear-gradient(45deg, #3c8d40, #4CAF50);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -43,7 +40,6 @@
             transform: translateY(2px);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        /* Animación de brillo al pasar el mouse */
         .download-btn::before {
             content: "";
             position: absolute;
@@ -62,8 +58,13 @@
     </style>
 </head>
 <body>
-    <a href="https://www.mediafire.com/file/ufubdj3qgmrn18c/FLUXUS_%2864%2B32_bit%29_2.650_FIXED.apk/file" class="download-btn" target="_blank">
-        Descargar APK
-    </a>
+    <button class="download-btn" onclick="redirectToDownload()">Descargar APK</button>
+
+    <script>
+        function redirectToDownload() {
+            const url = "https://www.mediafire.com/file/ufubdj3qgmrn18c/FLUXUS_%2864%2B32_bit%29_2.650_FIXED.apk/file";
+            window.location.href = url;
+        }
+    </script>
 </body>
 </html>
